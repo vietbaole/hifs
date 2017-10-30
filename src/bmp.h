@@ -41,7 +41,8 @@ typedef struct bmp_s{
 void reverse_endian(uint64_t, void*);
 bmp_t* bmp_init(char*);
 void bmp_print(bmp_t*);
-
 int bmp_write_data(bmp_t*, uint8_t*, uint64_t, uint8_t);
+int bmp_out(bmp_t*, char*);
+void bmp_free(bmp_t*);
 
 #endif
